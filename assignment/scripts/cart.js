@@ -10,8 +10,8 @@ function addItem(item){
 addItem(`chese`)
 addItem(`wine`)
 addItem(`bread`)
-console.log(addItem(`taco`));
-console.log(basket);
+console.log('Item added', addItem(`taco`));
+console.log('basket is now contains', basket);
 
 function listItems(){
   for (var i = 0; i < basket.length; i++) {
@@ -19,9 +19,16 @@ function listItems(){
 }return basket;
 }
  listItems()
- console.log(listItems());
+ console.log('Items in list: ', listItems());
 
 //for (var i = 0; i < basket.length; i++) {
   //console.log(basket[i])
 //}
 //just making sure this works
+function empty(){
+  let basket = []
+  return basket;
+}
+//return 'basket empty';
+empty()
+console.log('The basket is now empty', empty());
