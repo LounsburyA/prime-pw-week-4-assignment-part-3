@@ -26,8 +26,9 @@ function listItems(){
 //}
 //just making sure this works
 
-function empty(){
-basket = []
+function empty(basket){
+basket = [];
+return basket;
 }
 //got rid of let =   it was declaring a new variable it the scope of this function only, not changing the global variable basket.
 //return 'basket empty';
