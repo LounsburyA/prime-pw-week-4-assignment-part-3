@@ -14,22 +14,22 @@ console.log('Item added', addItem(`taco`));
 console.log('basket is now contains', basket);
 
 function listItems(){
-  for (var i = 0; i < basket.length; i++) {
-  (basket[i])
+  for (let i = 0; i < basket.length; i++) {
+  console.log(basket[i]);
 }return basket;
 }
  listItems()
  console.log('Items in list: ', listItems());
-
+// var snuck in there because atom auto filled it, i missed it this time
 //for (var i = 0; i < basket.length; i++) {
   //console.log(basket[i])
 //}
 //just making sure this works
 
 function empty(){
-  let basket = []
-  return basket;
+basket = []
 }
+//got rid of let =   it was declaring a new variable it the scope of this function only, not changing the global variable basket.
 //return 'basket empty';
 empty()
 console.log('The basket is now empty', empty());
